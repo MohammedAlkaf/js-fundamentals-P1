@@ -15,6 +15,45 @@ function exercise11() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  
+  let charGrid = '';
+  for(let r=1;r<=8;r++) {
+    if(r%2 === 0) {
+      for (let i = 1; i <= 8; i++) {
+        if(i%8 !== 0) {
+          if(i%2 !== 0) {
+            charGrid = charGrid + "_";
+          } else {
+            charGrid = charGrid + "#";
+          }
+        } else {
+          if(i%2 !== 0) {
+            charGrid = charGrid + "_\n";
+          } else {
+            charGrid = charGrid + "#\n";
+          }
+        }
+      }
+    } else {
+      for (let i = 1; i <= 8; i++) {
+        if(i%8 !== 0) {
+          if(i%2 !== 0) {
+            charGrid = charGrid + "#";
+          } else {
+            charGrid = charGrid + "_";
+          }
+        } else {
+          if(i%2 !== 0) {
+            charGrid = charGrid + "#\n";
+          } else {
+            charGrid = charGrid + "_\n";
+          }
+        }
+      }
+    }
+  }
+  console.log(charGrid);
+
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

@@ -7,7 +7,7 @@ function exercise6_3() {
   // Write code between the lines (below)
   // -----------------------------------------------------------------
 
-  for( i = 1; i <= 50; i++) {
+  for( let i = 1; i <= 50; i++) {
 
     if(i%2 === 0) {
       console.log(i);

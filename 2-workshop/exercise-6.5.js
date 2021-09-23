@@ -17,7 +17,7 @@ function exercise6_5() {
   // Write code between the lines (below)
   // -----------------------------------------------------------------
 
-  for( let i = 0; i <= 10; i++){
+  for(let i = 0; i <= 10; i++){
 
     if(i%2 === 0){
 

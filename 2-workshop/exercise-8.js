@@ -8,6 +8,12 @@ function exercise8() {
   // Write code between the lines (below)
   // -----------------------------------------------------------------
 
+  let sum = 0;
+  for(let i = 0; i <= 5000; i = i+4) {
+
+    sum = sum +i;
+
+  }
   console.log(`The sum is ${sum}`);
   // -----------------------------------------------------------------
   // Write code between the lines (above)

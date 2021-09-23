@@ -13,6 +13,11 @@ function exercise10() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+  let hashtag = "#";
+  for(let i = 1;i <= 7;i++){
+    console.log(hashtag);
+    hashtag = hashtag + "#";
+  }
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

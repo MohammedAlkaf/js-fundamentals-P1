@@ -7,7 +7,7 @@ function exercise6_4() {
   // Write code between the lines (below)
   // -----------------------------------------------------------------
 
-  for( let i = 36; i >= 0; i--) {
+  for(let i = 36; i >= 0; i--) {
 
     if(i%2 === 0){
 
