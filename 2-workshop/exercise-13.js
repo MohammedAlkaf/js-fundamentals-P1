@@ -20,6 +20,24 @@ function exercise13() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+
+  let fibi = 0;
+  let fib1 = 0;
+  let fib2 = 1;
+
+  //choose Fibonacci sequence number
+  
+  let fibonacciSequenceNumber = 50;
+  
+  for (let i=3;i<=fibonacciSequenceNumber;i++) {
+    fibi = fib1 + fib2;
+  
+    fib1 = fib2;
+    fib2 = fibi;
+    
+  }
+  
+  console.log(fibi);
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //

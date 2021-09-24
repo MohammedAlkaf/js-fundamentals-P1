@@ -15,12 +15,19 @@ function exercise11() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
-  
+
+  // It is a long code but it works for any grid npt only 8x8 
   let charGrid = '';
-  for(let r=1;r<=8;r++) {
+
+  // Choose grid dimesions
+  let rows = 8;
+  let columns = 8;
+
+
+  for(let r=1;r<=rows;r++) {
     if(r%2 === 0) {
-      for (let i = 1; i <= 8; i++) {
-        if(i%8 !== 0) {
+      for (let i = 1; i <= columns; i++) {
+        if(i%columns !== 0) {
           if(i%2 !== 0) {
             charGrid = charGrid + "_";
           } else {
@@ -35,8 +42,8 @@ function exercise11() {
         }
       }
     } else {
-      for (let i = 1; i <= 8; i++) {
-        if(i%8 !== 0) {
+      for (let i = 1; i <= columns; i++) {
+        if(i%columns !== 0) {
           if(i%2 !== 0) {
             charGrid = charGrid + "#";
           } else {

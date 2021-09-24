@@ -15,6 +15,33 @@ function exercise12() {
   //
   // Write code between the lines (below)
   // -----------------------------------------------------------------
+
+  let primeNumber = 0;
+  let condition = 0;
+  console.log(2);
+  console.log(3);
+  console.log(5);
+  console.log(7);
+  console.log(11);
+  console.log(13);
+
+  for(let i=1;primeNumber<=200;i++){
+    if(primeNumber <= 200) {
+
+      primeNumber = 6*i -1;
+      condition = primeNumber%5 !==0 && primeNumber%7 !==0 && primeNumber%11 !==0 && primeNumber%13 !==0;
+      if(condition && primeNumber <=200) {
+        console.log(primeNumber);
+      }
+      primeNumber = 6*i +1;
+      condition = primeNumber%5 !==0 && primeNumber%7 !==0 && primeNumber%11 !==0 && primeNumber%13 !==0;
+          if(condition && primeNumber <=200) {
+        console.log(primeNumber);
+      }
+    }
+
+  }
+}
   // -----------------------------------------------------------------
   // Write code between the lines (above)
   //
@@ -23,9 +50,7 @@ function exercise12() {
   //
   //
   //
-}
+  // Once you are done type the following in the terminal to test your answer(s).
+  // yarn test exercise-12
 
-// Once you are done type the following in the terminal to test your answer(s).
-// yarn test exercise-12
-
-module.exports = exercise12;
+  module.exports = exercise12;
