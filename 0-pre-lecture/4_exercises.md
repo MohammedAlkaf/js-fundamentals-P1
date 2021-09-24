@@ -14,7 +14,19 @@ _We will correct these exercises in class._
 5. 400 <= 400 && 399 < 400 && (30 > 31 || 400 > 31) -------> true && true && (false || true) -------> true
 6. true && false && false || false && true -------> false
 7. true && false || true || false -------> true
-8. true && false && false || false && true ? true && false && false || false && true : 1 < 2 && 2 > 1 -------> This question looks weird ! what is '?' and ':' ?
+8. true && false && false || false && true ? true && false && false || false && true : 1 < 2 && 2 > 1 ------->
+
+//lets simplify the question:
+false || false && true ? false || flase : true && true
+false || false && true ? false : true
+false || false ? false : true
+false || true
+true ------ final answer
+
+
+
+
+
 ```
 
 ---
